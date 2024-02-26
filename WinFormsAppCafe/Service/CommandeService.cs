@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.Design;
-using WinFormsAppCafe.Models;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+﻿using WinFormsAppCafe.Models;
 
 namespace WinFormsAppCafe.Service
 {

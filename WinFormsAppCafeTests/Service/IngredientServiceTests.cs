@@ -3,6 +3,9 @@ using WinFormsAppCafe.Models;
 
 namespace WinFormsAppCafe.Service.Tests
 {
+	/// <summary>
+	/// Test des méthode de la classe IngredientService
+	/// </summary>
 	[TestClass()]
 	public class IngredientServiceTests
 	{

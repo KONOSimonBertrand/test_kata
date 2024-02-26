@@ -1,6 +1,5 @@
 using WinFormsAppCafe.Models;
 using WinFormsAppCafe.Service;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormsAppCafe
 {

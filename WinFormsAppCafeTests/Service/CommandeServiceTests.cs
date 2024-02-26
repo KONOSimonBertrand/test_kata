@@ -1,10 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Linq.Expressions;
 using WinFormsAppCafe.Models;
 using WinFormsAppCafe.Service;
 
 namespace WinFormsAppCafeTests.Service
 {
+	/// <summary>
+	/// Test des méthode de la classe CommandeService
+	/// </summary>
 	[TestClass()]
 	public class CommandeServiceTests
 	{
