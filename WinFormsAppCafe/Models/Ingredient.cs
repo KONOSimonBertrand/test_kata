@@ -3,7 +3,7 @@
 	/// <summary>
 	/// Représenter un ingredient
 	/// </summary>
-	public class Ingredient
+	public class Ingredient:IEquatable<Ingredient>
 	{
 		public int Id { get; set; }
 		public string Nom { get; set; }
@@ -12,6 +12,12 @@
 			Id = id;
 			this.Nom = nom;
 			this.Prix = prix;
+		}
+
+		bool IEquatable<Ingredient>.Equals(Ingredient other)
+		{
+			if(other == null) return false;
+			return (other.Id == this.Id || other.Nom == this.Nom);
 		}
 	}
 }

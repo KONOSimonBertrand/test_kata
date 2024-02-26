@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsAppCafe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25e316f591329e949ae952cf36e33716ab006022")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8df0e8f6907b1f742ea4696b0b9a9340320cf05f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsAppCafe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsAppCafe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

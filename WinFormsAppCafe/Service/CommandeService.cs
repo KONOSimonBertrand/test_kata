@@ -1,4 +1,4 @@
-﻿using System.Net.NetworkInformation;
+﻿using System.ComponentModel.Design;
 using WinFormsAppCafe.Models;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -7,7 +7,7 @@ namespace WinFormsAppCafe.Service
 	/// <summary>
 	/// Gestion des commandes 
 	/// </summary>
-	public class CommandeService
+	public class CommandeService:ICommandeService
 	{
 
 
@@ -92,6 +92,22 @@ namespace WinFormsAppCafe.Service
 		public Commande GetCommande(int id)
 		{
 			return _commandes.SingleOrDefault(c => c.Id == id);
+		}
+		//calul du prix de vente
+		public double GetPrixVente(int commandeId)
+		{
+			double prixVente = 0;
+			var commande =_commandes.SingleOrDefault(x => x.Id == commandeId);
+			var recetteList = _commandes.Where(x => x.Id == commandeId).Select(c => c.Recette);
+			double prix = 0;
+			foreach (var r in recetteList)
+			{
+				prix += r.Sum(item => item.Quantite * item.Ingredient.Prix);
+			}
+			var marge = prix * 0.3;
+			prixVente=prix+marge;
+			return prixVente;
+
 		}
 	}
 }
